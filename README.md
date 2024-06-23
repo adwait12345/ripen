@@ -26,11 +26,9 @@ npm run dev
 
 ## Demo
 
-Deployment: Coming soon !!
+Deployment: 
+https://ripen.vercel.app
 
-
-Quick Demo:
-https://github.com/adwait12345/swipe/blob/master/quickDemo.pdf
 
 ## Acknowledgements
 
