@@ -165,7 +165,7 @@ export function InputForm() {
             name="age"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="font-semibold">Age</FormLabel>
+                <FormLabel className="font-semibold">Age<span className="text-red-500">*</span></FormLabel>
                 <FormControl>
                   <Input type='number' className="form-input" placeholder="Age" {...field} />
                 </FormControl>
@@ -179,7 +179,7 @@ export function InputForm() {
             name="gender"
             render={({ field }) => (
               <FormItem className="space-y-3">
-                <FormLabel>Gender</FormLabel>
+                <FormLabel>Gender<span className="text-red-500">*</span></FormLabel>
                 <FormControl>
                   <RadioGroup
                     onValueChange={field.onChange}
@@ -210,7 +210,7 @@ export function InputForm() {
             name="companySize"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="font-semibold">Company Size</FormLabel>
+                <FormLabel className="font-semibold">Company Size<span className="text-red-500">*</span></FormLabel>
                 <FormControl className='w-full flex flex-col p-2' aria-required>
                   <select value={field.value} onChange={(e) => field.onChange(e.target.value)} className="form-input">
                     <option value="">Select Company Size</option>
